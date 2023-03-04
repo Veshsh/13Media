@@ -1,0 +1,168 @@
+﻿<Window x:Class="_13Media.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_13Media"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="400" FontSize="48">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" FontSize="20" Click="Open">
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H384 V0 H0 Z">
+                                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M384,512z M0,0z M64,464L320,464C328.8,464,336,456.8,336,448L336,160 256,160C238.3,160,224,145.7,224,128L224,48 64,48C55.2,48,48,55.2,48,64L48,448C48,456.8,55.2,464,64,464z M0,64C0,28.7,28.7,0,64,0L229.5,0C246.5,0,262.8,6.7,274.8,18.7L365.3,109.2C377.3,121.2,384,137.5,384,154.5L384,448C384,483.3,355.3,512,320,512L64,512C28.7,512,0,483.3,0,448L0,64z M192,272L192,400C192,406.5 188.1,412.3 182.1,414.8 176.1,417.3 169.2,415.9 164.7,411.3L129.4,376 112,376C103.2,376,96,368.8,96,360L96,312C96,303.2,103.2,296,112,296L129.4,296 164.7,260.7C169.3,256.1 176.2,254.8 182.1,257.2 188,259.6 192,265.5 192,272z M277.8,268C289.4,288 296,311.3 296,336 296,360.7 289.4,384 277.8,404 271.2,415.5 256.5,419.4 245,412.8 233.5,406.2 229.6,391.5 236.2,380 243.7,367.1 248,352.1 248,336 248,319.9 243.7,304.9 236.2,292 229.6,280.5 233.5,265.8 245,259.2 256.5,252.6 271.2,256.5 277.8,268z" />
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+            <ComboBox x:Name="Combobox"  Grid.Row="1" Grid.Column="0" FontSize="12" VerticalContentAlignment="Center" SelectionChanged="OverMusic"/>
+            <Button x:Name="Rundome" Grid.Row="0" Grid.Column="1" Click="Rundom">
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H512 V0 H0 Z">
+                                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M512,512z M0,0z M403.8,34.4C415.8,29.4,429.5,32.2,438.7,41.3L502.7,105.3C508.7,111.3 512.1,119.4 512.1,127.9 512.1,136.4 508.7,144.5 502.7,150.5L438.7,214.5C429.5,223.7 415.8,226.4 403.8,221.4 391.8,216.4 384,204.8 384,191.8L384,160 352,160C341.9,160,332.4,164.7,326.4,172.8L284,229.3 244,176 275.2,134.4C293.3,110.2,321.8,96,352,96L384,96 384,64C384,51.1,391.8,39.4,403.8,34.4z M164,282.7L204,336 172.8,377.6C154.7,401.8,126.2,416,96,416L32,416C14.3,416 0,401.7 0,384 0,366.3 14.3,352 32,352L96,352C106.1,352,115.6,347.3,121.6,339.2L164,282.7z M438.6,470.7C429.4,479.9 415.7,482.6 403.7,477.6 391.7,472.6 383.9,461 383.9,448L383.9,416 352,416C321.8,416,293.3,401.8,275.2,377.6L121.6,172.8C115.6,164.7,106.1,160,96,160L32,160C14.3,160 0,145.7 0,128 0,110.3 14.3,96 32,96L96,96C126.2,96,154.7,110.2,172.8,134.4L326.4,339.2C332.4,347.3,341.9,352,352,352L384,352 384,320C384,307.1 391.8,295.4 403.8,290.4 415.8,285.4 429.5,288.2 438.7,297.3L502.7,361.3C508.7,367.3 512.1,375.4 512.1,383.9 512.1,392.4 508.7,400.5 502.7,406.5L438.7,470.5z" />
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+            <Button Click="Again" Grid.Row="0" Grid.Column="3" FontSize="20">
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H512 V0 H0 Z">
+                                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M512,512z M0,0z M0,224C0,241.7 14.3,256 32,256 49.7,256 64,241.7 64,224 64,171 107,128 160,128L320,128 320,160C320,172.9 327.8,184.6 339.8,189.6 351.8,194.6 365.5,191.8 374.7,182.7L438.7,118.7C451.2,106.2,451.2,85.9,438.7,73.4L374.7,9.39999999999999C365.5,0.199999999999992 351.8,-2.50000000000001 339.8,2.49999999999999 327.8,7.49999999999999 320,19.1 320,32L320,64 160,64C71.6,64,0,135.6,0,224z M512,288C512,270.3 497.7,256 480,256 462.3,256 448,270.3 448,288 448,341 405,384 352,384L192,384 192,352C192,339.1 184.2,327.4 172.2,322.4 160.2,317.4 146.5,320.2 137.3,329.3L73.3,393.3C60.8,405.8,60.8,426.1,73.3,438.6L137.3,502.6C146.5,511.8 160.2,514.5 172.2,509.5 184.2,504.5 192,492.9 192,479.9L192,448 352,448C440.4,448,512,376.4,512,288z" />
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+            <Slider x:Name="Sounde" ValueChanged="Sound" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Maximum="100" />
+            <TextBlock x:Name="Timer"  Grid.Row="1" Grid.Column="1" FontSize="20" Text="00:00:00" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+        <Slider x:Name="Slidere" ValueChanged="Slider" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <MediaElement x:Name="media" LoadedBehavior="Manual" Grid.Row="1" Grid.Column="0"/>
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Click="Back">
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H512 V0 H0 Z">
+                                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M512,512z M0,0z M459.5,440.6C469,448.5 482.3,450.3 493.6,445 504.9,439.7 512,428.4 512,416L512,96C512,83.6 504.8,72.3 493.6,67 482.4,61.7 469.1,63.4 459.5,71.4L288,214.3 288,256 288,297.7 459.5,440.6z M256,352L256,256 256,128 256,96C256,83.6 248.8,72.3 237.6,67 226.4,61.7 213.1,63.4 203.5,71.4L11.5,231.4C4.2,237.5 0,246.5 0,256 0,265.5 4.2,274.5 11.5,280.6L203.5,440.6C213,448.5 226.3,450.3 237.6,445 248.9,439.7 256,428.4 256,416L256,352z" />
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="1" Click="Back10">
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H320 V0 H0 Z">
+                                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M320,512z M0,0z M267.5,440.6C277,448.5 290.3,450.3 301.6,445 312.9,439.7 320,428.4 320,416L320,96C320,83.6 312.8,72.3 301.6,67 290.4,61.7 277.1,63.4 267.5,71.4L75.5,231.4 64,241 64,96C64,78.3 49.7,64 32,64 14.3,64 0,78.3 0,96L0,416C0,433.7 14.3,448 32,448 49.7,448 64,433.7 64,416L64,271 75.5,280.6 267.5,440.6z" />
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Click="Pause">
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H384 V0 H0 Z">
+                                        <GeometryDrawing x:Name="play" Geometry="F1 M384,512z M0,0z M73,39C58.2,29.9 39.6,29.6 24.5,38.1 9.4,46.6 0,62.6 0,80L0,432C0,449.4 9.4,465.4 24.5,473.9 39.6,482.4 58.2,482 73,473L361,297C375.3,288.3 384,272.8 384,256 384,239.2 375.3,223.8 361,215L73,39z" />
+                                        <GeometryDrawing x:Name="pause" Geometry="F1 M320,512z M0,0z M48,64C21.5,64,0,85.5,0,112L0,400C0,426.5,21.5,448,48,448L80,448C106.5,448,128,426.5,128,400L128,112C128,85.5,106.5,64,80,64L48,64z M240,64C213.5,64,192,85.5,192,112L192,400C192,426.5,213.5,448,240,448L272,448C298.5,448,320,426.5,320,400L320,112C320,85.5,298.5,64,272,64L240,64z"/>
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3" Click="Forward10">
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H320 V0 H0 Z">
+                                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M320,512z M0,0z M52.5,440.6C43,448.5 29.7,450.3 18.4,445 7.1,439.7 0,428.4 0,416L0,96C0,83.6 7.2,72.3 18.4,67 29.6,61.7 42.9,63.4 52.5,71.4L244.5,231.4 256,241 256,96C256,78.3 270.3,64 288,64 305.7,64 320,78.3 320,96L320,416C320,433.7 305.7,448 288,448 270.3,448 256,433.7 256,416L256,271 244.5,280.6 52.5,440.6z" />
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="4" Click="Forward" >
+                <Button.Content>
+                    <Image>
+                        <Image.Source>
+                            <DrawingImage>
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup ClipGeometry="M0,0 V512 H512 V0 H0 Z">
+                                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M512,512z M0,0z M52.5,440.6C43,448.5 29.7,450.3 18.4,445 7.1,439.7 0,428.4 0,416L0,96C0,83.6 7.2,72.3 18.4,67 29.6,61.7 42.9,63.4 52.5,71.4L224,214.3 224,256 224,297.7 52.5,440.6z M256,352L256,256 256,128 256,96C256,83.6 263.2,72.3 274.4,67 285.6,61.7 298.9,63.4 308.5,71.4L500.5,231.4C507.8,237.5 512,246.5 512,256 512,265.5 507.8,274.5 500.5,280.6L308.5,440.6C299,448.5 285.7,450.3 274.4,445 263.1,439.7 256,428.4 256,416L256,352z" />
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Button.Content>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

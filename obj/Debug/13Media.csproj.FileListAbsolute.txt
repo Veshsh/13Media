@@ -1,0 +1,16 @@
+C:\Users\vanaj\source\repos\13Media\bin\Debug\13Media.exe.config
+C:\Users\vanaj\source\repos\13Media\bin\Debug\13Media.exe
+C:\Users\vanaj\source\repos\13Media\bin\Debug\13Media.pdb
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media.csproj.AssemblyReference.cache
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media.csproj.SuggestedBindingRedirects.cache
+C:\Users\vanaj\source\repos\13Media\obj\Debug\MainWindow.g.cs
+C:\Users\vanaj\source\repos\13Media\obj\Debug\App.g.cs
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media_MarkupCompile.cache
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media_MarkupCompile.lref
+C:\Users\vanaj\source\repos\13Media\obj\Debug\MainWindow.baml
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media.g.resources
+C:\Users\vanaj\source\repos\13Media\obj\Debug\_13Media.Properties.Resources.resources
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media.csproj.GenerateResource.cache
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media.csproj.CoreCompileInputs.cache
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media.exe
+C:\Users\vanaj\source\repos\13Media\obj\Debug\13Media.pdb
